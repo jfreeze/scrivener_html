@@ -185,10 +185,8 @@ defmodule Scrivener.HTML do
          page_param: _page_param,
          params: _params
        )
-       when not (style in @view_styles) do
-    raise "Scrivener.HTML: View style #{inspect(style)} is not a valid view style. Please use one of #{
-            inspect(@view_styles)
-          }"
+       when style not in @view_styles do
+    raise "Scrivener.HTML: View style #{inspect(style)} is not a valid view style. Please use one of #{inspect(@view_styles)}"
   end
 
   # Bootstrap implementation
