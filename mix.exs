@@ -29,7 +29,7 @@ defmodule ScrivenerHtml.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [
-      extra_applications: [:logger, :phoenix_html]
+      extra_applications: [:logger]
     ]
   end
 
